@@ -296,7 +296,13 @@ def user_stats(df):
     print('-'*40)
 
 def get_raw_data(df):
-    """Displays the raw data (5 rows at a time) of the DataFrame"""
+    """
+    Displays the raw data (5 rows at a time) of the DataFrame
+
+    Args:
+        (dataframe) df - a pandas dataframe
+    """
+
     showraw = input('\nWould you like to see the raw data? Enter yes or no.\n')
     if showraw.lower() == 'yes':
         begin = 0
