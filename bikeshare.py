@@ -42,6 +42,12 @@ def get_filter_city():
     print()
     if choice.lower() in CITY_DATA.keys():
         return choice.lower()
+    elif choice.lower() == 'chi':
+        return 'chicago'
+    elif choice.lower() == 'nyc':
+        return 'new york city'
+    elif choice.lower() == 'dc':
+        return 'washington'
     else:
         print('The city [', choice, '] is not an option at this time!\n')
         print('Please choose again.\n\n')
