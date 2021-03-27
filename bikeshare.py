@@ -1,6 +1,6 @@
 import time
 import pandas as pd
-# nm
+
 START_TITLE = """
             _   _ ____    ____  _ _             _                    
            | | | / ___|  | __ )(_) | _____  ___| |__   __ _ _ __ ___ 
@@ -85,7 +85,6 @@ def get_filters():
                 else:
                     month = month_choice.lower()
                     break
-            #break
         elif time_choice.lower() == 'day':
             while True:
                 # get user input for day of week (all, monday, tuesday, ... sunday)
@@ -99,7 +98,6 @@ def get_filters():
                 else:
                     day = day_choice.lower()
                     break
-            #break
         elif time_choice.lower() == 'all':
             # No filters applied
             month = ALL_MONTHS 
