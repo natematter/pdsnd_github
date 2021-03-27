@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 # nm
 START_TITLE = """
             _   _ ____    ____  _ _             _                    
