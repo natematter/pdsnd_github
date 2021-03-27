@@ -1,7 +1,6 @@
 import time
 import pandas as pd
-import numpy as np
-# nm
+
 START_TITLE = """
             _   _ ____    ____  _ _             _                    
            | | | / ___|  | __ )(_) | _____  ___| |__   __ _ _ __ ___ 
@@ -43,6 +42,12 @@ def get_filter_city():
     print()
     if choice.lower() in CITY_DATA.keys():
         return choice.lower()
+    elif choice.lower() == 'chi':
+        return 'chicago'
+    elif choice.lower() == 'nyc':
+        return 'new york city'
+    elif choice.lower() == 'dc':
+        return 'washington'
     else:
         print('The city [', choice, '] is not an option at this time!\n')
         print('Please choose again.\n\n')
@@ -86,7 +91,6 @@ def get_filters():
                 else:
                     month = month_choice.lower()
                     break
-            #break
         elif time_choice.lower() == 'day':
             while True:
                 # get user input for day of week (all, monday, tuesday, ... sunday)
@@ -100,7 +104,6 @@ def get_filters():
                 else:
                     day = day_choice.lower()
                     break
-            #break
         elif time_choice.lower() == 'all':
             # No filters applied
             month = ALL_MONTHS 
